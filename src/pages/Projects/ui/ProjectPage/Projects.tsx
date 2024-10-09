@@ -1,5 +1,5 @@
 import { Grid } from '@mui/material';
-import { PROJECTS_LIST } from '../../constants';
+import { PROJECTS_LIST } from '../../../../shared/constants';
 import { ProjectCard } from '../Card/Card';
 
 

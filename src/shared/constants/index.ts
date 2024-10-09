@@ -1,17 +1,16 @@
-import { Project } from "../ui/Card/Card.types";
-// @ts-ignore
-import IpponCard from '../../../shared/assets/images/ipponFirst.png';
-import { RoutePath } from "../../../shared/config/routeConfig";
+import IpponCard from '../assets/images/ipponFirst.png';
+import { RoutePath } from '../config/routeConfig';
+import { Project } from '../types/types';
 
 export const PROJECTS_LIST: Project[] = [
   {
     name: 'Оформление контента для YouTube канала',
-    image: 'wewe',
+    image: IpponCard,
     link: RoutePath.youtubeChannel,
   },
   {
     name: 'Иллюстрация для приложения NomadHer',
-    image: 'weaaawe',
+    image: IpponCard,
     link: RoutePath.nomadHer,
   },
   {
@@ -21,7 +20,7 @@ export const PROJECTS_LIST: Project[] = [
   },
   {
     name: 'Оформление контента для сообщества в VK',
-    image: 'sdsd',
+    image: IpponCard,
     link: RoutePath.vkCommunity,
   },
 ];

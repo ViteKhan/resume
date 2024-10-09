@@ -6,7 +6,13 @@ import PhoneIphoneRoundedIcon from '@mui/icons-material/PhoneIphoneRounded';
 
 export const Contacts = () => {
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '16px', margin: '20px auto', maxWidth: '300px' }}>
+    <Box
+      display="flex"
+      flexDirection="column"
+      gap="16px"
+      margin="20px auto"
+      maxWidth="300px"
+    >
       <ContactLink
         title={'Instagram'}
         link={'https://www.instagram.com/sorimantil'}

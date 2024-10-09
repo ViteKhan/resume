@@ -1,10 +1,13 @@
 import {  Box, Typography } from '@mui/material';
-// @ts-ignore
 import Photo from '../../shared/assets/images/photo.jpg'
 
 export const About = () => {
   return (
-    <Box sx={{ width: '100%', maxWidth: 610, margin: '0 auto' }}>
+    <Box
+      width="100%"
+      maxWidth={610}
+      margin="0 auto"
+    >
       <img
         src={Photo}
         alt="Хан Лилия Марселевна"

@@ -1,39 +1,62 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Keyboard, Mousewheel } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
+import { Box } from '@mui/material';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/autoplay';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
+import { PROJECTS_LIST } from '../../shared/constants';
 
 export const Main = () => {
   return (
-    <div>
+    <Box margin="20px auto">
       <Swiper
-        effect={'coverflow'}
-        spaceBetween={30}
+        spaceBetween={10}
         slidesPerView={3}
         breakpoints={{
-          320: {
+          0: {
             slidesPerView: 1,
-            spaceBetween: 10
+            spaceBetween: 0
           },
-          480: {
+          500: {
             slidesPerView: 2,
+            spaceBetween: 15
+          },
+          900: {
+            slidesPerView: 2,
+            spaceBetween: 15
+          },
+          1025: {
+            slidesPerView: 3,
             spaceBetween: 20
           },
-          640: {
-            slidesPerView: 3,
-            spaceBetween: 30
-          }
         }}
         autoplay
-        modules={[Keyboard, Mousewheel, Navigation]}
+        modules={[Autoplay, Navigation]}
+        navigation
         grabCursor
         loop
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide> 
-        <SwiperSlide>Slide 4</SwiperSlide>
+        {PROJECTS_LIST.map((project) => (
+          <SwiperSlide key={project.name}>
+            <Zoom>
+              <Box 
+                display="flex"
+                justifyContent="center"
+                alignItems="center"
+                height="100%"
+              >
+                <img
+                  src={project.image}
+                  alt={project.name}
+                  style={{ maxWidth: '100%', height: 'auto' }}
+                />
+              </Box>
+            </Zoom>
+          </SwiperSlide>
+        ))}
       </Swiper>
-    </div>
+    </Box>
   );
 };
