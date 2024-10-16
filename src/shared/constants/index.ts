@@ -1,16 +1,19 @@
+import YoutubeChannel from '../assets/images/youtubeChannelFirst.png';
+import NomadHer from '../assets/images/nomadHerHorizontal.png';
 import IpponCard from '../assets/images/ipponFirst.png';
+import VkCommunity from '../assets/images/vkCommunitySecond.png';
 import { RoutePath } from '../config/routeConfig';
 import { Project } from '../types/types';
 
 export const PROJECTS_LIST: Project[] = [
   {
     name: 'Оформление контента для YouTube канала',
-    image: IpponCard,
+    image: YoutubeChannel,
     link: RoutePath.youtubeChannel,
   },
   {
     name: 'Иллюстрация для приложения NomadHer',
-    image: IpponCard,
+    image: NomadHer,
     link: RoutePath.nomadHer,
   },
   {
@@ -20,7 +23,7 @@ export const PROJECTS_LIST: Project[] = [
   },
   {
     name: 'Оформление контента для сообщества в VK',
-    image: IpponCard,
+    image: VkCommunity,
     link: RoutePath.vkCommunity,
   },
 ];

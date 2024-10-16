@@ -16,15 +16,19 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
       sx={{
         backgroundColor: theme.palette.primary.contrastText,
         borderRadius: '10px',
-        minHeight: '300px'
       }}
     >
       <CardMedia
-        sx={{ height: 140 }}
+        component="img"
+        sx={{
+          height: 240, 
+          objectFit: 'cover',
+          width: '100%', 
+        }}
         image={project.image}
         title={project.name}
       />
-      <CardContent sx={{ minHeight: '103px'}}>
+      <CardContent sx={{ minHeight: '105px'}}>
         <Typography gutterBottom variant="h6" component="div" fontWeight={600}>
           {project.name}
         </Typography>

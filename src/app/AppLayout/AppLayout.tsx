@@ -24,7 +24,7 @@ export const AppLayout = () => {
           minHeight: "100vh",
         }}
       >
-        <Container maxWidth={false}>
+        <Container maxWidth={false} sx={{ paddingX: '20px' }}>
           <Outlet />
         </Container>
       </Box>
