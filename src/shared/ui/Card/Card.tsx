@@ -8,7 +8,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
   const navigate = useNavigate(); 
 
   const goToProject = () => {
-    navigate(`/projects/${project.link}`);
+    navigate(`/${project.link}`);
   };
 
   return (

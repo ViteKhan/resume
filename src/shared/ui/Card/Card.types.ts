@@ -1,4 +1,4 @@
-import { Project } from '../../../../shared/types/types';
+import { Project } from '../../types/types';
 
 export interface ProjectCardProps {
   project: Project;

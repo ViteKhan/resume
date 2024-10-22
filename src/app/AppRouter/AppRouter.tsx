@@ -21,20 +21,6 @@ const router = createBrowserRouter([
         },
         index: true,
       },
-    ],
-  },
-  {
-    element: <AppLayout />,
-    path: RoutePath.projects,
-    children: [
-      {
-        lazy: async () => {
-          const { Projects } = await import("../../pages/Projects/ui");
-
-          return { Component: Projects };
-        },
-        index: true,
-      },
       {
         path: RoutePath.youtubeChannel,
         lazy: async () => {

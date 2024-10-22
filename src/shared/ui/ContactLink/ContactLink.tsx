@@ -25,7 +25,7 @@ export const ContactLink: FC<ContactLinkProps> = ({ icon, link, title, isNewTab 
           padding: '10px',
           background: theme.palette.primary.contrastText,
           color: theme.palette.text.primary,
-          '&:hover': {
+          '&:hover, &:active': {
             background: theme.palette.text.primary,
             color: theme.palette.text.secondary,
             '& .MuiAvatar-root': {
