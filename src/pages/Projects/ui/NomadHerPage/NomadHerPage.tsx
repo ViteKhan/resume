@@ -7,7 +7,7 @@ import 'react-medium-image-zoom/dist/styles.css';
 
 const images = [
   { src: NomadHerHorizontal, height: 'auto' },
-  { src: NomadHerVertical, height: '400px'},
+  { src: NomadHerVertical, height: '400px', width: '200px'},
 
 ];
 
@@ -48,7 +48,7 @@ export const NomadHerPage = () => {
               <img
                 src={image.src}
                 alt={`nomadher ${index}`}
-                style={{ width: '100%', height: image.height, borderRadius: '10px' }}
+                style={{ width: image.width ?? '100%', height: image.height, borderRadius: '10px' }}
               />
             </Box>
           </Zoom>
