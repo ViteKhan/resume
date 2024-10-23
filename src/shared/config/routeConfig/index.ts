@@ -8,6 +8,7 @@ enum AppRoute {
   NOMADHER = 'nomadHer',
   PASS_CARD = 'passCard',
   VK_COMMUNITY = 'vkCommunity',
+  COLORING_BOOK = 'coloringBook',
 }
   
 export const RoutePath: Record<AppRoute, string> = {
@@ -19,5 +20,6 @@ export const RoutePath: Record<AppRoute, string> = {
   [AppRoute.NOMADHER]: 'nomadher',
   [AppRoute.PASS_CARD]: 'pass-card',
   [AppRoute.VK_COMMUNITY]: 'vk-community',
+  [AppRoute.COLORING_BOOK]: 'coloring-book',
 };
   

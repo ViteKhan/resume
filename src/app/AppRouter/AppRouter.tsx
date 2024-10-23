@@ -49,6 +49,13 @@ const router = createBrowserRouter([
           return { Component: VkCommunityPage };
         },
       },
+      {
+        path: RoutePath.coloringBook,
+        lazy: async () => {
+          const { ColoringBookPage } = await import("../../pages/Projects/ui");
+          return { Component: ColoringBookPage };
+        },
+      },
     ],
   },
   {

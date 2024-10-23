@@ -2,6 +2,7 @@ import YoutubeChannel from '../assets/images/youtubeChannelFirst.png';
 import NomadHer from '../assets/images/nomadHerHorizontal.png';
 import IpponCard from '../assets/images/ipponFirst.png';
 import VkCommunity from '../assets/images/vkCommunitySecond.png';
+import ColoringBook from '../assets/images/coloringBook2.png';
 import { RoutePath } from '../config/routeConfig';
 import { Project } from '../types/types';
 
@@ -25,5 +26,10 @@ export const PROJECTS_LIST: Project[] = [
     name: 'Оформление контента для сообщества в VK',
     image: VkCommunity,
     link: RoutePath.vkCommunity,
+  },
+  {
+    name: 'Идея раскраски для банковских работников ко Дню матери',
+    image: ColoringBook,
+    link: RoutePath.coloringBook,
   },
 ];

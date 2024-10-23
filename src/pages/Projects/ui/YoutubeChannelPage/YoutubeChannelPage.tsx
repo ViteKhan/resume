@@ -48,7 +48,7 @@ export const YoutubeChannelPage = () => {
             >
               <img
                 src={image.src}
-                alt={`nomadher ${index}`}
+                alt={`youtubeChannel ${index}`}
                 style={{ width: '100%', height: image.height, borderRadius: '10px' }}
               />
             </Box>

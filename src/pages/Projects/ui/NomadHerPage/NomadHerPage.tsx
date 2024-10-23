@@ -6,8 +6,9 @@ import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 
 const images = [
-  { src: NomadHerVertical, height: '500px'},
   { src: NomadHerHorizontal, height: 'auto' },
+  { src: NomadHerVertical, height: '400px'},
+
 ];
 
 export const NomadHerPage = () => {
